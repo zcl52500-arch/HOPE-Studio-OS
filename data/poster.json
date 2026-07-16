@@ -1,0 +1,186 @@
+{
+  "content": {
+    "title": "重新理解职业教育",
+    "subtitle": "青年发展 · 真实世界 · 行动可能",
+    "body": "职业教育不只是“就业前的技能训练”，也不只是传统意义上的升学替代路径。它连接着青年如何认识自我、理解劳动、进入产业、参与城市生活，以及在快速变化的社会中持续学习与成长。\n\n从青年真实处境、学习经验、劳动体验和未来选择出发，重新提问：职业教育还能是什么？它可以怎样支持青年更有尊严、更有能力地进入真实世界？",
+    "event": "7月20日｜成都\n分享 · 讨论\n欢迎关注职业教育与青年发展的伙伴参与"
+  },
+  "brand": {
+    "name": "HOPE 学堂",
+    "logo": "",
+    "qrCode": "",
+    "style": {
+      "background": "linear-gradient(135deg, rgba(120, 185, 67, 0.08), transparent 38%), linear-gradient(180deg, #ffffff 0%, #fbfcfd 100%)"
+    }
+  },
+  "theme": {
+    "root": {
+      "style": {
+        "borderRadius": "28px",
+        "color": "#202733"
+      }
+    },
+    "components": {
+      "Text": {
+        "style": {
+          "margin": "0"
+        }
+      }
+    }
+  },
+  "layout": {
+    "size": {
+      "width": 1080,
+      "height": 1440
+    },
+    "renderTree": {
+      "id": "poster-root",
+      "type": "Container",
+      "style": {
+        "position": "relative",
+        "display": "flex",
+        "flexDirection": "column",
+        "padding": "64px",
+        "overflow": "hidden"
+      },
+      "children": [
+        {
+          "id": "brand-ribbon",
+          "type": "Container",
+          "style": {
+            "position": "absolute",
+            "top": "32px",
+            "right": "32px",
+            "display": "flex",
+            "gap": "8px"
+          },
+          "children": [
+            {
+              "id": "ribbon-blue",
+              "type": "Container",
+              "style": {
+                "width": "42px",
+                "height": "8px",
+                "borderRadius": "999px",
+                "background": "#388BCB"
+              }
+            },
+            {
+              "id": "ribbon-green",
+              "type": "Container",
+              "style": {
+                "width": "42px",
+                "height": "8px",
+                "borderRadius": "999px",
+                "background": "#78B943"
+              }
+            },
+            {
+              "id": "ribbon-yellow",
+              "type": "Container",
+              "style": {
+                "width": "42px",
+                "height": "8px",
+                "borderRadius": "999px",
+                "background": "#F6C500"
+              }
+            }
+          ]
+        },
+        {
+          "id": "logo",
+          "type": "Logo",
+          "style": {
+            "width": "94px",
+            "height": "94px",
+            "marginBottom": "116px",
+            "borderRadius": "24px",
+            "background": "#eef7ff",
+            "border": "1px solid rgba(56, 139, 203, 0.16)"
+          }
+        },
+        {
+          "id": "content",
+          "type": "Container",
+          "style": {
+            "maxWidth": "760px"
+          },
+          "children": [
+            {
+              "id": "subtitle",
+              "type": "Text",
+              "bind": "subtitle",
+              "style": {
+                "marginBottom": "18px",
+                "color": "#78B943",
+                "fontSize": "34px",
+                "fontWeight": "700",
+                "lineHeight": "1.45"
+              }
+            },
+            {
+              "id": "title",
+              "type": "Text",
+              "bind": "title",
+              "style": {
+                "marginBottom": "32px",
+                "fontSize": "88px",
+                "fontWeight": "800",
+                "lineHeight": "0.96",
+                "letterSpacing": "-0.075em"
+              }
+            },
+            {
+              "id": "body",
+              "type": "Text",
+              "bind": "body",
+              "style": {
+                "color": "#3b4653",
+                "fontSize": "28px",
+                "lineHeight": "1.78",
+                "whiteSpace": "pre-wrap"
+              }
+            }
+          ]
+        },
+        {
+          "id": "footer",
+          "type": "Container",
+          "style": {
+            "display": "flex",
+            "alignItems": "flex-end",
+            "justifyContent": "space-between",
+            "gap": "28px",
+            "marginTop": "auto",
+            "paddingTop": "72px"
+          },
+          "children": [
+            {
+              "id": "event",
+              "type": "Text",
+              "bind": "event",
+              "style": {
+                "color": "#6f7b88",
+                "fontSize": "22px",
+                "fontWeight": "650",
+                "lineHeight": "1.65",
+                "whiteSpace": "pre-wrap"
+              }
+            },
+            {
+              "id": "qr",
+              "type": "QRCode",
+              "style": {
+                "width": "118px",
+                "height": "118px",
+                "borderRadius": "22px",
+                "background": "#f3faee",
+                "border": "1px solid rgba(120, 185, 67, 0.18)"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  }
+}
