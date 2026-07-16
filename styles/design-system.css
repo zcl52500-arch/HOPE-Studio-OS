@@ -1,0 +1,55 @@
+:root {
+  --hope-blue: #388BCB;
+  --hope-green: #78B943;
+  --hope-yellow: #F6C500;
+  --hope-white: #FAFBFC;
+  --hope-dark: #2E3440;
+
+  --hope-font-size-title: 32px;
+  --hope-line-height-title: 40px;
+  --hope-font-weight-title: 700;
+
+  --hope-font-size-subtitle: 24px;
+  --hope-line-height-subtitle: 32px;
+  --hope-font-weight-subtitle: 600;
+
+  --hope-font-size-body: 16px;
+  --hope-line-height-body: 24px;
+  --hope-font-weight-body: 400;
+
+  --hope-font-size-quote: 18px;
+  --hope-line-height-quote: 28px;
+  --hope-font-weight-quote: 400;
+  --hope-font-style-quote: italic;
+
+  --hope-font-size-caption: 12px;
+  --hope-line-height-caption: 16px;
+  --hope-font-weight-caption: 400;
+
+  --hope-spacing-4: 4px;
+  --hope-spacing-8: 8px;
+  --hope-spacing-16: 16px;
+  --hope-spacing-24: 24px;
+  --hope-spacing-32: 32px;
+  --hope-spacing-48: 48px;
+  --hope-spacing-64: 64px;
+
+  --hope-radius-small: 4px;
+  --hope-radius-medium: 8px;
+  --hope-radius-large: 16px;
+
+  --hope-shadow-soft: 0 4px 12px color-mix(in srgb, var(--hope-dark) 12%, transparent);
+  --hope-shadow-medium: 0 8px 24px color-mix(in srgb, var(--hope-dark) 18%, transparent);
+  --hope-shadow-none: none;
+
+  --hope-layout-poster-width: 1080px;
+  --hope-layout-poster-height: 1440px;
+  --hope-layout-wechat-official-account-width: 900px;
+  --hope-layout-wechat-official-account-height: 383px;
+  --hope-layout-ppt-width: 1920px;
+  --hope-layout-ppt-height: 1080px;
+  --hope-layout-banner-width: 1920px;
+  --hope-layout-banner-height: 640px;
+  --hope-layout-card-width: 360px;
+  --hope-layout-card-height: 240px;
+}
