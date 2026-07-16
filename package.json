@@ -1,0 +1,11 @@
+{
+  "name": "poster-renderer",
+  "version": "1.0.0",
+  "description": "A dependency-free browser poster renderer for composing and exporting event posters.",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "python3 -m http.server 4173",
+    "check": "node --check src/main.js"
+  }
+}

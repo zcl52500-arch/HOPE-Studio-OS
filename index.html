@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Poster Renderer</title>
+  </head>
+  <body>
+    <main class="app-shell">
+      <section class="workspace" aria-label="Poster preview workspace">
+        <div class="poster-frame" id="posterPreview">
+          <div class="grain"></div>
+          <div class="orb orb-one"></div>
+          <div class="orb orb-two"></div>
+          <article class="poster-card">
+            <p class="eyebrow" data-poster-field="eyebrow"></p>
+            <h1 data-poster-field="title"></h1>
+            <p class="subtitle" data-poster-field="subtitle"></p>
+            <div class="poster-meta">
+              <span data-poster-field="details"></span>
+              <strong data-poster-field="cta"></strong>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <aside class="control-panel" aria-label="Poster controls">
+        <div>
+          <p class="kicker">✦ Creative tool</p>
+          <h2>Poster Renderer</h2>
+          <p class="panel-copy">Tune the copy, visual theme, and atmosphere for a ready-to-share poster.</p>
+        </div>
+
+        <label><span>Eyebrow</span><input data-control="eyebrow" /></label>
+        <label><span>Title</span><input data-control="title" /></label>
+        <label><span>Subtitle</span><textarea data-control="subtitle"></textarea></label>
+        <label><span>Details</span><input data-control="details" /></label>
+        <label><span>Call to action</span><input data-control="cta" /></label>
+
+        <fieldset>
+          <legend>Theme</legend>
+          <div class="theme-grid" id="themeGrid"></div>
+        </fieldset>
+
+        <label>
+          <span>Atmosphere</span>
+          <input data-control="density" type="range" min="25" max="90" />
+        </label>
+
+        <button class="export-button" type="button" id="exportButton">↓ Export poster</button>
+      </aside>
+    </main>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
