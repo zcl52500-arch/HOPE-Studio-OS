@@ -23,6 +23,23 @@
         </div>
 
         <form class="content-form" id="contentForm">
+          <fieldset class="field layout-field">
+            <legend>Layout Engine</legend>
+            <label for="layoutPresetInput">
+              <span>画布规格</span>
+              <select id="layoutPresetInput" name="layoutPreset" aria-describedby="layoutHint"></select>
+            </label>
+            <label for="layoutDensityInput">
+              <span>内容密度</span>
+              <select id="layoutDensityInput" name="layoutDensity" aria-describedby="layoutHint">
+                <option value="balanced">Balanced</option>
+                <option value="compact">Compact</option>
+                <option value="spacious">Spacious</option>
+              </select>
+            </label>
+            <p class="field-hint" id="layoutHint">自动根据平台尺寸与内容密度重排预览画布。</p>
+          </fieldset>
+
           <label class="field" for="titleInput">
             <span>标题</span>
             <input id="titleInput" name="title" type="text" autocomplete="off" />
@@ -64,7 +81,12 @@
           <p class="preview-note">Auto composed from your content</p>
         </div>
 
-        <article class="design-canvas" aria-live="polite" aria-label="Design preview">
+        <div class="layout-status" aria-live="polite">
+          <span id="layoutNamePreview">Poster</span>
+          <span id="layoutSizePreview">1080 × 1440</span>
+        </div>
+
+        <article class="design-canvas" id="designCanvas" aria-live="polite" aria-label="Design preview">
           <div class="brand-ribbon" aria-hidden="true">
             <span class="ribbon-blue"></span>
             <span class="ribbon-green"></span>

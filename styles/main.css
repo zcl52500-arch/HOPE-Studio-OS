@@ -263,3 +263,135 @@ input[type="file"] {
   .preview-heading { display: block; }
   .canvas-footer { align-items: flex-start; flex-direction: column; }
 }
+
+select {
+  width: 100%;
+  border: 1px solid var(--hope-border);
+  border-radius: 16px;
+  background: #fff;
+  color: var(--hope-text);
+  font: inherit;
+  font-weight: 700;
+  outline: none;
+  padding: 14px 15px;
+  transition: border-color 160ms ease, box-shadow 160ms ease;
+}
+
+select:focus {
+  border-color: var(--hope-blue);
+  box-shadow: 0 0 0 4px rgba(56, 139, 203, 0.12);
+}
+
+.layout-field {
+  grid-template-columns: 1fr 1fr;
+  margin: 0;
+  padding: 18px;
+  border: 1px solid rgba(56, 139, 203, 0.16);
+  border-radius: 22px;
+  background: linear-gradient(135deg, rgba(56, 139, 203, 0.08), rgba(120, 185, 67, 0.08));
+}
+
+.layout-field legend {
+  padding: 0 8px;
+  color: var(--hope-blue);
+  font-size: 0.78rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.layout-field label {
+  display: grid;
+  gap: 8px;
+}
+
+.field-hint {
+  grid-column: 1 / -1;
+  margin: 0;
+  color: var(--hope-muted);
+  font-size: 0.82rem;
+  font-weight: 600;
+}
+
+.layout-status {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  margin: -8px 0 14px;
+  color: var(--hope-muted);
+  font-size: 0.82rem;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.design-canvas {
+  width: min(100%, var(--layout-width, 540px));
+  min-height: var(--layout-height, 680px);
+  margin: 0 auto;
+  padding: calc(clamp(28px, 5vw, 56px) * var(--layout-padding-scale, 1));
+}
+
+.design-canvas[data-orientation="landscape"] {
+  min-height: max(var(--layout-height, 430px), 360px);
+}
+
+.design-canvas[data-orientation="landscape"] .canvas-logo {
+  margin-bottom: calc(32px * var(--layout-gap-scale, 1));
+}
+
+.design-canvas[data-orientation="landscape"] .canvas-content {
+  max-width: 78%;
+}
+
+.design-canvas[data-orientation="landscape"] .canvas-footer {
+  padding-top: calc(28px * var(--layout-gap-scale, 1));
+}
+
+.design-canvas[data-layout="card"] .brand-ribbon,
+.design-canvas[data-layout="wechatOfficialAccount"] .brand-ribbon {
+  transform: scale(0.78);
+  transform-origin: top right;
+}
+
+.design-canvas[data-layout="card"] .canvas-logo,
+.design-canvas[data-layout="wechatOfficialAccount"] .canvas-logo {
+  width: 64px;
+  height: 64px;
+  margin-bottom: calc(18px * var(--layout-gap-scale, 1));
+  border-radius: 18px;
+}
+
+.design-canvas[data-layout="card"] .canvas-body,
+.design-canvas[data-layout="wechatOfficialAccount"] .canvas-body {
+  min-height: 3.4em;
+}
+
+.design-canvas[data-layout="card"] .canvas-footer,
+.design-canvas[data-layout="wechatOfficialAccount"] .canvas-footer {
+  align-items: center;
+  padding-top: calc(18px * var(--layout-gap-scale, 1));
+}
+
+.design-canvas[data-layout="card"] .canvas-qr,
+.design-canvas[data-layout="wechatOfficialAccount"] .canvas-qr {
+  width: 72px;
+  height: 72px;
+  border-radius: 16px;
+}
+
+.canvas-title {
+  font-size: calc(clamp(2.8rem, 7vw, 6.4rem) * var(--layout-type-scale, 1));
+}
+
+.canvas-subtitle {
+  font-size: calc(clamp(1rem, 2vw, 1.35rem) * var(--layout-type-scale, 1));
+}
+
+.canvas-body {
+  font-size: calc(clamp(1.05rem, 2vw, 1.32rem) * var(--layout-type-scale, 1));
+}
+
+@media (max-width: 620px) {
+  .layout-field { grid-template-columns: 1fr; }
+  .layout-status { display: grid; }
+}
