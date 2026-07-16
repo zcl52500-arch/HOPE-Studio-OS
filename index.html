@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="HOPE Studio OS - AI Design Operating System" />
+    <title>HOPE Studio OS</title>
+    <link rel="stylesheet" href="styles/main.css" />
+  </head>
+  <body>
+    <header class="app-header" aria-label="HOPE Studio branding">
+      <div>
+        <p class="eyebrow">HOPE Studio</p>
+        <h1>Create Beautiful Ideas.</h1>
+      </div>
+    </header>
+
+    <main class="studio-shell">
+      <section class="panel editor-panel" aria-labelledby="editor-title">
+        <div class="panel-heading">
+          <p class="eyebrow">Input</p>
+          <h2 id="editor-title">输入内容</h2>
+        </div>
+
+        <form class="content-form" id="contentForm">
+          <label class="field" for="titleInput">
+            <span>标题</span>
+            <input id="titleInput" name="title" type="text" autocomplete="off" />
+          </label>
+
+          <label class="field" for="subtitleInput">
+            <span>副标题</span>
+            <input id="subtitleInput" name="subtitle" type="text" autocomplete="off" />
+          </label>
+
+          <label class="field" for="bodyInput">
+            <span>正文</span>
+            <textarea id="bodyInput" name="body" rows="7"></textarea>
+          </label>
+
+          <label class="field" for="eventInput">
+            <span>活动信息</span>
+            <textarea id="eventInput" name="event" rows="4"></textarea>
+          </label>
+
+          <label class="field file-field" for="qrInput">
+            <span>二维码</span>
+            <input id="qrInput" name="qr" type="file" accept="image/*" />
+          </label>
+
+          <label class="field file-field" for="logoInput">
+            <span>Logo</span>
+            <input id="logoInput" name="logo" type="file" accept="image/*" />
+          </label>
+        </form>
+      </section>
+
+      <section class="panel preview-panel" aria-labelledby="preview-title">
+        <div class="panel-heading preview-heading">
+          <div>
+            <p class="eyebrow">Preview</p>
+            <h2 id="preview-title">实时预览</h2>
+          </div>
+          <p class="preview-note">Auto composed from your content</p>
+        </div>
+
+        <article class="design-canvas" aria-live="polite" aria-label="Design preview">
+          <div class="brand-ribbon" aria-hidden="true">
+            <span class="ribbon-blue"></span>
+            <span class="ribbon-green"></span>
+            <span class="ribbon-yellow"></span>
+          </div>
+
+          <div class="canvas-logo is-empty" id="logoPreview" aria-label="Logo preview"></div>
+
+          <div class="canvas-content">
+            <p class="canvas-subtitle is-empty" id="subtitlePreview"></p>
+            <h3 class="canvas-title is-empty" id="titlePreview"></h3>
+            <p class="canvas-body is-empty" id="bodyPreview"></p>
+          </div>
+
+          <footer class="canvas-footer">
+            <p class="canvas-event is-empty" id="eventPreview"></p>
+            <div class="canvas-qr is-empty" id="qrPreview" aria-label="QR code preview"></div>
+          </footer>
+        </article>
+      </section>
+    </main>
+
+    <script src="scripts/app.js" defer></script>
+  </body>
+</html>
