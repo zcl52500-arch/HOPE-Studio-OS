@@ -1,0 +1,19 @@
+{
+  "name": "hope-studio-layout-engine",
+  "version": "0.1.0",
+  "description": "Deterministic layout engine primitives for HOPE Studio OS.",
+  "type": "module",
+  "main": "src/layout-engine.js",
+  "scripts": {
+    "test": "node --test"
+  },
+  "keywords": [
+    "layout",
+    "engine",
+    "studio"
+  ],
+  "license": "UNLICENSED",
+  "engines": {
+    "node": ">=20"
+  }
+}
