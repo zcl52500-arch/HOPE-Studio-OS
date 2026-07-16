@@ -1,0 +1,82 @@
+{
+  "brand": {
+    "name": "HOPE 学堂",
+    "colors": {
+      "blue": "#388BCB",
+      "green": "#78B943",
+      "yellow": "#F6C500",
+      "white": "#FAFBFC",
+      "dark": "#2E3440"
+    }
+  },
+  "typography": {
+    "title": {
+      "fontSize": "32px",
+      "lineHeight": "40px",
+      "fontWeight": 700
+    },
+    "subtitle": {
+      "fontSize": "24px",
+      "lineHeight": "32px",
+      "fontWeight": 600
+    },
+    "body": {
+      "fontSize": "16px",
+      "lineHeight": "24px",
+      "fontWeight": 400
+    },
+    "quote": {
+      "fontSize": "18px",
+      "lineHeight": "28px",
+      "fontWeight": 400,
+      "fontStyle": "italic"
+    },
+    "caption": {
+      "fontSize": "12px",
+      "lineHeight": "16px",
+      "fontWeight": 400
+    }
+  },
+  "spacing": {
+    "4": "4px",
+    "8": "8px",
+    "16": "16px",
+    "24": "24px",
+    "32": "32px",
+    "48": "48px",
+    "64": "64px"
+  },
+  "borderRadius": {
+    "small": "4px",
+    "medium": "8px",
+    "large": "16px"
+  },
+  "shadow": {
+    "soft": "0 4px 12px rgba(46, 52, 64, 0.12)",
+    "medium": "0 8px 24px rgba(46, 52, 64, 0.18)",
+    "none": "none"
+  },
+  "layout": {
+    "poster": {
+      "width": "1080px",
+      "height": "1440px"
+    },
+    "wechatOfficialAccount": {
+      "name": "公众号",
+      "width": "900px",
+      "height": "383px"
+    },
+    "ppt": {
+      "width": "1920px",
+      "height": "1080px"
+    },
+    "banner": {
+      "width": "1920px",
+      "height": "640px"
+    },
+    "card": {
+      "width": "360px",
+      "height": "240px"
+    }
+  }
+}
